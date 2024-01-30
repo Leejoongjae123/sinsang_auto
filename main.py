@@ -1,38 +1,13 @@
 import openpyxl
 import pandas as pd
-from pyautogui import size
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import subprocess
-import shutil
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from bs4 import BeautifulSoup
-import time
-import datetime
-import pyautogui
-import pyperclip
-import csv
 import sys
 import os
-import math
 import requests
 import re
 import random
-import chromedriver_autoinstaller
-from PyQt5.QtWidgets import QWidget, QApplication, QTreeView, QFileSystemModel, QVBoxLayout, QPushButton, QInputDialog, \
-    QLineEdit, QMainWindow, QMessageBox, QFileDialog
-from PyQt5.QtCore import QCoreApplication
-from selenium.webdriver import ActionChains
-from datetime import datetime, date, timedelta
 import numpy
 import datetime
-# from window import Ui_MainWindow
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
 import json
 import pprint
 import os
@@ -43,7 +18,7 @@ from email.mime.multipart import MIMEMultipart  # 메일의 Data 영역의 메�
 from email.mime.text import MIMEText  # 메일의 본문 내용을 만드는 모듈
 from email.mime.base import MIMEBase
 from email import encoders
-
+import time
 
 def ConvertToTwoDigits(num):
     # 숫자를 문자열로 변환
@@ -1514,6 +1489,7 @@ while True:
     currentTime=datetime.datetime.now().strftime("%H%M%S")
     print("현재시간:",currentTime)
     if currentTime=="200000":
+    # if True:
         while True:
             try:
                 storeInfos, loginData = GetGoogleSpread()
